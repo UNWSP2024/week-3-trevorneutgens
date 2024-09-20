@@ -7,17 +7,20 @@
 
 def categorize_age(age):
     ageCategory = "TBD"
-    ######################
-    # WRITE YOUR CODE HERE
-    ######################
+    #elif statement to categorize a persons age
+    if age <= 1:
+        ageCategory = 'infant'
+    elif age < 13:
+        ageCategory = 'child'
+    elif age < 20:
+        ageCategory = 'teenager'
+    else:
+        ageCategory = 'adult'
 
 
     return ageCategory
 
 
-#### This piece of the code has been done for you,
-#### you only need to worry about the actual shipping 
-#### charge logic in the weight_conversion function
 if __name__ == '__main__':
     # Local variables
     # Get age from the user.
